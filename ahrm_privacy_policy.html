@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Chính sách bảo mật của ứng dụng AHRM – quản lý nhân sự và chấm công của AGS.">
+  <meta name="robots" content="index,follow">
+  <title>Chính sách bảo mật | AHRM – AGS</title>
+  <style>
+    :root {
+      --brand: #1459a6;
+      --brand-dark: #103e73;
+      --ink: #1d2939;
+      --muted: #667085;
+      --surface: #ffffff;
+      --page: #f4f7fb;
+      --line: #e4eaf2;
+      --accent: #eaf3ff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--page);
+      font: 16px/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    a { color: var(--brand); }
+    .hero {
+      color: #fff;
+      background: linear-gradient(130deg, var(--brand-dark), var(--brand));
+      padding: 52px 20px 62px;
+    }
+    .hero-inner, main, footer { width: min(100% - 32px, 980px); margin: 0 auto; }
+    .brand {
+      display: inline-flex; align-items: center; gap: 10px;
+      font-weight: 800; letter-spacing: .08em; font-size: 14px;
+      margin-bottom: 24px;
+    }
+    .brand-mark {
+      width: 74px;
+      flex: 0 0 74px;
+      display: flex;
+      align-items: center;
+    }
+    .brand-mark img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      display: block;
+    }
+    h1 { font-size: clamp(30px, 5vw, 44px); line-height: 1.2; margin: 0 0 14px; }
+    .hero p { max-width: 720px; color: #eaf2ff; margin: 0; }
+    .updated { margin-top: 22px !important; font-size: 14px; color: #d5e5ff !important; }
+    main { margin-top: -25px; margin-bottom: 48px; }
+    .intro, .policy, .toc {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 16px; box-shadow: 0 8px 28px rgba(16, 62, 115, .05);
+    }
+    .intro { padding: 22px 26px; margin-bottom: 18px; border-left: 4px solid var(--brand); }
+    .toc { padding: 22px 26px; margin-bottom: 18px; }
+    .toc h2 { margin-top: 0; }
+    .toc ol { margin-bottom: 0; padding-left: 22px; columns: 2; column-gap: 36px; }
+    .toc li { break-inside: avoid; margin: 4px 0; }
+    .policy { padding: clamp(22px, 4vw, 38px); }
+    section { scroll-margin-top: 20px; }
+    section + section { border-top: 1px solid var(--line); margin-top: 28px; padding-top: 22px; }
+    h2 { color: var(--brand-dark); font-size: 22px; line-height: 1.35; margin: 0 0 12px; }
+    h3 { font-size: 17px; margin: 18px 0 6px; }
+    p { margin: 8px 0 12px; }
+    ul { padding-left: 24px; }
+    li { margin: 5px 0; }
+    .note {
+      background: var(--accent); border-radius: 10px; padding: 14px 16px;
+      color: #24466e; margin: 14px 0;
+    }
+    .contact {
+      background: #f8fafc; border: 1px solid var(--line); border-radius: 12px;
+      padding: 16px 18px;
+    }
+    footer { color: var(--muted); font-size: 14px; padding: 0 0 32px; text-align: center; }
+    .back-top { display: inline-block; margin-top: 10px; text-decoration: none; }
+    @media (max-width: 640px) {
+      .hero { padding: 38px 0 52px; }
+      .toc ol { columns: 1; }
+      .intro, .toc { padding: 18px; }
+      .policy { padding: 22px 18px; }
+    }
+    @media print {
+      body { background: #fff; }
+      .hero { background: #fff; color: #111; padding: 20px 0; }
+      .hero p, .updated { color: #333 !important; }
+      main { margin-top: 0; }
+      .intro, .policy, .toc { box-shadow: none; break-inside: avoid; }
+      a { color: #111; text-decoration: none; }
+    }
+  </style>
+</head>
+<body id="top">
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="brand"><span class="brand-mark"><img src="logo_ags.png" alt="Logo AGS"></span><span>  AHRM</span></div>
+      <h1>Chính sách bảo mật</h1>
+      <p>Thông tin về cách ứng dụng AHRM xử lý, sử dụng, lưu trữ và bảo vệ dữ liệu của người dùng.</p>
+      <p class="updated">Ngày cập nhật: 20/10/2026</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="intro">
+      <strong>Giới thiệu</strong>
+      <p>AHRM là ứng dụng phục vụ công tác quản lý nhân sự và chấm công của AGS. Chính sách này giải thích các nguyên tắc bảo mật áp dụng khi bạn sử dụng ứng dụng. Công ty chỉ nên công bố chính sách này sau khi đã rà soát và điều chỉnh để phản ánh đúng các tính năng, quyền truy cập và quy trình xử lý dữ liệu thực tế của AHRM.</p>
+    </div>
+
+    <nav class="toc" aria-label="Mục lục">
+      <h2>Mục lục</h2>
+      <ol>
+        <li><a href="#scope">Phạm vi áp dụng</a></li>
+        <li><a href="#data">Dữ liệu có thể được xử lý</a></li>
+        <li><a href="#purpose">Mục đích sử dụng dữ liệu</a></li>
+        <li><a href="#sharing">Chia sẻ dữ liệu</a></li>
+        <li><a href="#storage">Lưu trữ và bảo mật</a></li>
+        <li><a href="#retention">Thời hạn lưu trữ</a></li>
+        <li><a href="#rights">Quyền của người dùng</a></li>
+        <li><a href="#children">Quyền riêng tư của trẻ em</a></li>
+        <li><a href="#changes">Thay đổi chính sách</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ol>
+    </nav>
+
+    <article class="policy">
+      <section id="scope">
+        <h2>1. Phạm vi áp dụng</h2>
+        <p>Chính sách này áp dụng cho người dùng ứng dụng AHRM và các dữ liệu được xử lý thông qua ứng dụng trong phạm vi các chức năng mà tổ chức triển khai. Việc sử dụng AHRM có thể chịu sự điều chỉnh của các quy định nội bộ, thỏa thuận lao động và quy định pháp luật có liên quan.</p>
+      </section>
+
+      <section id="data">
+        <h2>2. Dữ liệu có thể được xử lý</h2>
+        <p>Tùy theo cấu hình và chức năng thực tế được bật, AHRM có thể xử lý một số nhóm dữ liệu sau:</p>
+        <ul>
+          <li><strong>Thông tin tài khoản:</strong> mã nhân viên, tên hiển thị, tên đăng nhập và thông tin xác thực cần thiết để đăng nhập.</li>
+          <li><strong>Thông tin nhân sự:</strong> phòng ban, chức danh, thông tin công việc và dữ liệu nhân sự được cung cấp hoặc đồng bộ từ hệ thống quản lý của tổ chức.</li>
+          <li><strong>Dữ liệu chấm công:</strong> thời gian vào/ra, lịch sử chấm công, ca làm việc và thông tin liên quan đến yêu cầu điều chỉnh công (nếu có).</li>
+          <li><strong>Dữ liệu thiết bị và kỹ thuật:</strong> thông tin phiên đăng nhập, nhật ký lỗi, phiên bản ứng dụng và thông tin kỹ thuật cần thiết để duy trì an toàn, khắc phục sự cố.</li>
+          <li><strong>Dữ liệu vị trí hoặc hình ảnh:</strong> chỉ khi tính năng chấm công hoặc chức năng khác yêu cầu và người dùng cấp quyền tương ứng. Việc xử lý phải phù hợp với thông báo trong ứng dụng và quy định áp dụng.</li>
+        </ul>
+      </section>
+
+      <section id="purpose">
+        <h2>3. Mục đích sử dụng dữ liệu</h2>
+        <p>Dữ liệu có thể được sử dụng để:</p>
+        <ul>
+          <li>Xác thực người dùng và quản lý quyền truy cập.</li>
+          <li>Hỗ trợ quản lý nhân sự, lịch làm việc, chấm công và đối soát dữ liệu công.</li>
+          <li>Đồng bộ thông tin với hệ thống nội bộ được tổ chức cho phép.</li>
+          <li>Phát hiện hoạt động bất thường, bảo vệ hệ thống và xử lý sự cố kỹ thuật.</li>
+        </ul>
+      </section>
+
+
+      <section id="sharing">
+        <h2>4. Chia sẻ dữ liệu</h2>
+        <p>AHRM không bán dữ liệu cá nhân của người dùng. Dữ liệu có thể được cung cấp trong phạm vi cần thiết cho:</p>
+        <ul>
+          <li>Bộ phận nhân sự, quản trị hoặc người có thẩm quyền trong tổ chức để thực hiện công việc được giao.</li>
+          <li>Nhà cung cấp hạ tầng, lưu trữ hoặc dịch vụ kỹ thuật được ủy quyền, nếu có, theo các thỏa thuận bảo mật phù hợp.</li>
+          <li>Cơ quan nhà nước hoặc bên liên quan khi pháp luật yêu cầu hoặc khi cần bảo vệ quyền và an toàn hợp pháp.</li>
+        </ul>
+        <p>Việc chia sẻ phải giới hạn ở dữ liệu cần thiết, đúng mục đích và tuân thủ quy định bảo vệ dữ liệu cá nhân hiện hành.</p>
+      </section>
+
+      <section id="storage">
+        <h2>5. Lưu trữ và bảo mật</h2>
+        <p>Dữ liệu được lưu trữ trên hệ thống do tổ chức hoặc nhà cung cấp được ủy quyền quản lý, tùy theo kiến trúc triển khai thực tế. Các biện pháp bảo vệ có thể bao gồm kiểm soát quyền truy cập, xác thực tài khoản, mã hóa khi truyền dữ liệu, giám sát hệ thống và sao lưu phù hợp.</p>
+        <p>Không có phương thức truyền tải hoặc lưu trữ điện tử nào bảo đảm an toàn tuyệt đối. Người dùng cần giữ bí mật thông tin đăng nhập, đăng xuất khi dùng thiết bị chung và thông báo cho bộ phận hỗ trợ nếu nghi ngờ tài khoản bị truy cập trái phép.</p>
+      </section>
+
+      <section id="retention">
+        <h2>6. Thời hạn lưu trữ dữ liệu</h2>
+        <p>Dữ liệu được lưu trong thời gian cần thiết cho các mục đích nêu trong chính sách, theo quy định nội bộ và thời hạn lưu trữ bắt buộc của pháp luật. Khi dữ liệu không còn cần thiết, tổ chức sẽ xem xét xóa, ẩn danh hoặc xử lý theo quy trình lưu trữ và tiêu hủy được áp dụng, trừ trường hợp cần giữ lại theo quy định pháp luật hoặc để giải quyết tranh chấp.</p>
+        <p>Thời hạn cụ thể phụ thuộc vào từng loại hồ sơ nhân sự, chấm công và yêu cầu pháp lý liên quan.</p>
+      </section>
+
+      <section id="rights">
+        <h2>7. Quyền của người dùng</h2>
+        <p>Tùy theo pháp luật áp dụng và vai trò của người dùng, bạn có thể yêu cầu xem, cập nhật hoặc đính chính thông tin cá nhân; hỏi về việc xử lý dữ liệu; rút lại sự đồng ý khi việc xử lý dựa trên sự đồng ý; hoặc yêu cầu thực hiện các quyền khác theo quy định hiện hành.</p>
+        <p>Để bảo vệ dữ liệu nhân sự và ngăn truy cập trái phép, tổ chức có thể cần xác minh danh tính và thẩm quyền trước khi xử lý yêu cầu. Một số dữ liệu có thể phải được lưu giữ theo nghĩa vụ pháp lý hoặc quy trình nhân sự hợp lệ.</p>
+        <h3>Yêu cầu xóa tài khoản hoặc dữ liệu</h3>
+        <p>Nếu muốn yêu cầu xóa tài khoản hoặc dữ liệu liên quan, vui lòng liên hệ bộ phận hỗ trợ theo thông tin ở mục Liên hệ. Yêu cầu sẽ được xem xét theo quy định pháp luật, nghĩa vụ lưu trữ hồ sơ và chính sách nội bộ. Nếu ứng dụng có chức năng xóa tài khoản trực tiếp, hãy bổ sung hướng dẫn cụ thể tại đây.</p>
+      </section>
+
+      <section id="children">
+        <h2>8. Quyền riêng tư của trẻ em</h2>
+        <p>AHRM được thiết kế cho mục đích quản lý nhân sự và chấm công của tổ chức, không hướng đến trẻ em. Nếu phát hiện dữ liệu của trẻ em được cung cấp không phù hợp với mục đích ứng dụng hoặc quy định áp dụng, tổ chức sẽ xem xét và xử lý theo yêu cầu pháp luật.</p>
+      </section>
+
+      <section id="changes">
+        <h2>9. Thay đổi chính sách</h2>
+        <p>Chính sách có thể được cập nhật khi chức năng ứng dụng, quy trình xử lý dữ liệu hoặc quy định pháp luật thay đổi. Phiên bản mới sẽ được đăng tại trang này cùng ngày cập nhật. Nếu thay đổi có ảnh hưởng đáng kể đến quyền riêng tư, tổ chức sẽ thông báo bằng phương thức phù hợp khi cần thiết.</p>
+      </section>
+
+      <section id="contact">
+        <h2>10. Thông tin liên hệ</h2>
+        <p>Nếu có câu hỏi hoặc yêu cầu liên quan đến quyền riêng tư và dữ liệu cá nhân, vui lòng liên hệ đơn vị quản lý ứng dụng AHRM qua thông tin chính thức dưới đây.</p>
+        <div class="contact">
+          <p><strong>Đơn vị:</strong> AGS</p>
+          <p><strong>Email hỗ trợ:</strong> <em>it.ags@ags.com.vn</em></p>
+          <p><strong>Địa chỉ:</strong> <em>Sân Bay Quốc Tế Cam Ranh, Phường Bắc Cam Ranh, Tỉnh Khánh Hòa, Việt Nam</em></p>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <p>© <span id="year">2026</span> AGS · AHRM. Nội dung dành cho mục đích thông tin về quyền riêng tư.</p>
+    <a class="back-top" href="#top">↑ Về đầu trang</a>
+  </footer>
+</body>
+</html>
