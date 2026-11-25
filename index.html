@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Chính sách bảo mật của ứng dụng AHRM – quản lý nhân sự và chấm công của AGS.">
+  <meta name="description" content="Chính sách bảo mật của ứng dụng AHRM – ứng dụng nhân sự nội bộ dành cho nhân viên AGS.">
   <meta name="robots" content="index,follow">
   <title>Chính sách bảo mật | AHRM – AGS</title>
   <style>
@@ -99,23 +99,27 @@
 <body id="top">
   <header class="hero">
     <div class="hero-inner">
-      <div class="brand"><span class="brand-mark"><img src="logo_ags.png" alt="Logo AGS"></span><span>  AHRM</span></div>
+      <div class="brand"><span class="brand-mark"><img src="logo_ags.png" alt="Logo AGS"></span><span>AHRM</span></div>
       <h1>Chính sách bảo mật</h1>
       <p>Thông tin về cách ứng dụng AHRM xử lý, sử dụng, lưu trữ và bảo vệ dữ liệu của người dùng.</p>
+      <!-- <p class="updated">Cập nhật lần cuối: 25/11/2026</p> -->
     </div>
   </header>
 
   <main>
     <div class="intro">
       <strong>Giới thiệu</strong>
-      <p>AHRM là ứng dụng phục vụ công tác quản lý nhân sự và chấm công của AGS. Chính sách này giải thích các nguyên tắc bảo mật áp dụng khi bạn sử dụng ứng dụng. Công ty chỉ nên công bố chính sách này sau khi đã rà soát và điều chỉnh để phản ánh đúng các tính năng, quyền truy cập và quy trình xử lý dữ liệu thực tế của AHRM.</p>
+      <p>AHRM là ứng dụng nhân sự nội bộ dành riêng cho nhân viên của AGS (Aviation Ground Services Co., Ltd). Ứng dụng cho phép nhân viên đăng nhập bằng tài khoản do công ty cấp để xem lịch ca làm việc, dữ liệu chấm công và nhận thông báo từ công ty. Chính sách này giải thích những dữ liệu nào được xử lý khi bạn sử dụng AHRM, mục đích sử dụng và cách chúng tôi bảo vệ dữ liệu đó.</p>
     </div>
 
     <nav class="toc" aria-label="Mục lục">
       <h2>Mục lục</h2>
       <ol>
         <li><a href="#scope">Phạm vi áp dụng</a></li>
-        <li><a href="#data">Dữ liệu có thể được xử lý</a></li>
+        <li><a href="#data">Dữ liệu được xử lý</a></li>
+        <li><a href="#not-collected">Dữ liệu không thu thập</a></li>
+        <li><a href="#biometric">Đăng nhập bằng sinh trắc học</a></li>
+        <li><a href="#notifications">Thông báo đẩy</a></li>
         <li><a href="#purpose">Mục đích sử dụng dữ liệu</a></li>
         <li><a href="#sharing">Chia sẻ dữ liệu</a></li>
         <li><a href="#storage">Lưu trữ và bảo mật</a></li>
@@ -130,88 +134,115 @@
     <article class="policy">
       <section id="scope">
         <h2>1. Phạm vi áp dụng</h2>
-        <p>Chính sách này áp dụng cho người dùng ứng dụng AHRM và các dữ liệu được xử lý thông qua ứng dụng trong phạm vi các chức năng mà tổ chức triển khai. Việc sử dụng AHRM có thể chịu sự điều chỉnh của các quy định nội bộ, thỏa thuận lao động và quy định pháp luật có liên quan.</p>
+        <p>Chính sách này áp dụng cho nhân viên AGS sử dụng ứng dụng AHRM trên iOS và Android. AHRM không cho phép tự đăng ký tài khoản: tài khoản do bộ phận Nhân sự hoặc Công nghệ thông tin của AGS cấp cho nhân viên. Việc sử dụng AHRM đồng thời tuân theo nội quy lao động, quy định nội bộ của AGS và pháp luật Việt Nam về bảo vệ dữ liệu cá nhân.</p>
       </section>
 
       <section id="data">
-        <h2>2. Dữ liệu có thể được xử lý</h2>
-        <p>Tùy theo cấu hình và chức năng thực tế được bật, AHRM có thể xử lý một số nhóm dữ liệu sau:</p>
+        <h2>2. Dữ liệu được xử lý</h2>
+        <p>AHRM xử lý các nhóm dữ liệu sau:</p>
         <ul>
-          <li><strong>Thông tin tài khoản:</strong> mã nhân viên, tên hiển thị, tên đăng nhập và thông tin xác thực cần thiết để đăng nhập.</li>
-          <li><strong>Thông tin nhân sự:</strong> phòng ban, chức danh, thông tin công việc và dữ liệu nhân sự được cung cấp hoặc đồng bộ từ hệ thống quản lý của tổ chức.</li>
-          <li><strong>Dữ liệu chấm công:</strong> thời gian vào/ra, lịch sử chấm công, ca làm việc và thông tin liên quan đến yêu cầu điều chỉnh công (nếu có).</li>
-          <li><strong>Dữ liệu thiết bị và kỹ thuật:</strong> thông tin phiên đăng nhập, nhật ký lỗi, phiên bản ứng dụng và thông tin kỹ thuật cần thiết để duy trì an toàn, khắc phục sự cố.</li>
-          <li><strong>Dữ liệu vị trí hoặc hình ảnh:</strong> chỉ khi tính năng chấm công hoặc chức năng khác yêu cầu và người dùng cấp quyền tương ứng. Việc xử lý phải phù hợp với thông báo trong ứng dụng và quy định áp dụng.</li>
+          <li><strong>Thông tin tài khoản:</strong> mã nhân viên, họ tên, tên đăng nhập và mật khẩu dùng để đăng nhập. Tài khoản do AGS cấp; mật khẩu được gửi qua kết nối mã hóa để xác thực và không hiển thị cho bất kỳ ai.</li>
+          <li><strong>Thông tin nhân sự cơ bản:</strong> phòng ban, chức danh và các thông tin công việc liên quan, được lấy từ hệ thống quản lý nhân sự của AGS.</li>
+          <li><strong>Lịch ca làm việc:</strong> ca làm, ngày làm việc và các thay đổi ca được hệ thống của AGS gửi về ứng dụng.</li>
+          <li><strong>Dữ liệu chấm công:</strong> giờ vào/ra và lịch sử chấm công. Dữ liệu này được ghi nhận bởi hệ thống chấm công của AGS và gửi về ứng dụng qua API để bạn xem; AHRM không tự thực hiện việc chấm công trên điện thoại.</li>
+          <li><strong>Mã thông báo của thiết bị (push token):</strong> một mã định danh do hệ điều hành cấp, dùng để gửi thông báo tới đúng thiết bị của bạn.</li>
+          <li><strong>Dữ liệu kỹ thuật:</strong> thông tin phiên đăng nhập, phiên bản ứng dụng, loại thiết bị, phiên bản hệ điều hành và nhật ký lỗi cần thiết để bảo đảm an toàn và khắc phục sự cố.</li>
         </ul>
+      </section>
+
+      <section id="not-collected">
+        <h2>3. Dữ liệu không thu thập</h2>
+        <p>AHRM <strong>không</strong> thu thập hoặc truy cập:</p>
+        <ul>
+          <li>Vị trí (GPS) của thiết bị.</li>
+          <li>Camera, ảnh, video hoặc thư viện ảnh.</li>
+          <li>Danh bạ, tin nhắn, cuộc gọi hoặc micro.</li>
+          <li>Dữ liệu vân tay hoặc khuôn mặt (xem mục 4).</li>
+        </ul>
+        <p>AHRM không chứa quảng cáo và không theo dõi (tracking) người dùng trên các ứng dụng hoặc trang web khác.</p>
+      </section>
+
+      <section id="biometric">
+        <h2>4. Đăng nhập bằng sinh trắc học</h2>
+        <p>AHRM cho phép bạn đăng nhập nhanh bằng vân tay hoặc Face ID thay cho việc nhập mật khẩu. Tính năng này hoàn toàn tùy chọn và chỉ được bật khi bạn đồng ý.</p>
+        <div class="note">
+          <strong>Dữ liệu sinh trắc học của bạn không rời khỏi thiết bị.</strong> Việc nhận diện vân tay hoặc khuôn mặt do hệ điều hành (iOS hoặc Android) thực hiện trong vùng bảo mật của thiết bị. AHRM không đọc, không lưu trữ và không gửi dữ liệu vân tay hoặc khuôn mặt lên máy chủ; ứng dụng chỉ nhận về kết quả xác thực thành công hoặc không thành công.
+        </div>
+        <p>Khi bạn bật tính năng này, thông tin đăng nhập hoặc mã phiên được lưu trong vùng lưu trữ an toàn của thiết bị (Keychain trên iOS, Keystore trên Android) và chỉ được sử dụng sau khi xác thực sinh trắc học thành công. Bạn có thể tắt tính năng này bất cứ lúc nào trong phần cài đặt của ứng dụng hoặc bằng cách đăng xuất.</p>
+      </section>
+
+      <section id="notifications">
+        <h2>5. Thông báo đẩy</h2>
+        <p>AHRM gửi thông báo để báo cho bạn về lịch ca, thay đổi ca, dữ liệu chấm công và thông báo chung của công ty. Ứng dụng chỉ gửi thông báo khi bạn đã cho phép trên thiết bị.</p>
+        <p>Thông báo được chuyển tới thiết bị thông qua dịch vụ gửi thông báo của nền tảng (Apple Push Notification service trên iOS và Firebase Cloud Messaging của Google). Các dịch vụ này chỉ nhận mã thông báo của thiết bị và nội dung thông báo cần gửi. Bạn có thể tắt thông báo bất cứ lúc nào trong phần Cài đặt của điện thoại.</p>
       </section>
 
       <section id="purpose">
-        <h2>3. Mục đích sử dụng dữ liệu</h2>
-        <p>Dữ liệu có thể được sử dụng để:</p>
+        <h2>6. Mục đích sử dụng dữ liệu</h2>
+        <p>Dữ liệu chỉ được sử dụng để:</p>
         <ul>
-          <li>Xác thực người dùng và quản lý quyền truy cập.</li>
-          <li>Hỗ trợ quản lý nhân sự, lịch làm việc, chấm công và đối soát dữ liệu công.</li>
-          <li>Đồng bộ thông tin với hệ thống nội bộ được tổ chức cho phép.</li>
-          <li>Phát hiện hoạt động bất thường, bảo vệ hệ thống và xử lý sự cố kỹ thuật.</li>
+          <li>Xác thực người dùng và bảo đảm chỉ nhân viên AGS mới truy cập được ứng dụng.</li>
+          <li>Hiển thị lịch ca làm việc và dữ liệu chấm công của chính bạn.</li>
+          <li>Gửi thông báo liên quan đến công việc.</li>
+          <li>Phát hiện truy cập bất thường, bảo vệ hệ thống và khắc phục sự cố kỹ thuật.</li>
         </ul>
+        <p>Dữ liệu không được sử dụng cho mục đích quảng cáo hoặc tiếp thị.</p>
       </section>
 
-
       <section id="sharing">
-        <h2>4. Chia sẻ dữ liệu</h2>
-        <p>AHRM không bán dữ liệu cá nhân của người dùng. Dữ liệu có thể được cung cấp trong phạm vi cần thiết cho:</p>
+        <h2>7. Chia sẻ dữ liệu</h2>
+        <p>AGS không bán hoặc cho thuê dữ liệu cá nhân của người dùng. Dữ liệu chỉ được cung cấp trong phạm vi cần thiết cho:</p>
         <ul>
-          <li>Bộ phận nhân sự, quản trị hoặc người có thẩm quyền trong tổ chức để thực hiện công việc được giao.</li>
-          <li>Nhà cung cấp hạ tầng, lưu trữ hoặc dịch vụ kỹ thuật được ủy quyền, nếu có, theo các thỏa thuận bảo mật phù hợp.</li>
-          <li>Cơ quan nhà nước hoặc bên liên quan khi pháp luật yêu cầu hoặc khi cần bảo vệ quyền và an toàn hợp pháp.</li>
+          <li>Bộ phận Nhân sự, quản lý trực tiếp hoặc người có thẩm quyền trong AGS để thực hiện công việc được giao.</li>
+          <li>Nhà cung cấp dịch vụ kỹ thuật cần thiết cho hoạt động của ứng dụng, như dịch vụ gửi thông báo nêu tại mục 5 hoặc dịch vụ hạ tầng máy chủ, theo các thỏa thuận bảo mật phù hợp.</li>
+          <li>Cơ quan nhà nước có thẩm quyền khi pháp luật yêu cầu.</li>
         </ul>
-        <p>Việc chia sẻ phải giới hạn ở dữ liệu cần thiết, đúng mục đích và tuân thủ quy định bảo vệ dữ liệu cá nhân hiện hành.</p>
       </section>
 
       <section id="storage">
-        <h2>5. Lưu trữ và bảo mật</h2>
-        <p>Dữ liệu được lưu trữ trên hệ thống do tổ chức hoặc nhà cung cấp được ủy quyền quản lý, tùy theo kiến trúc triển khai thực tế. Các biện pháp bảo vệ có thể bao gồm kiểm soát quyền truy cập, xác thực tài khoản, mã hóa khi truyền dữ liệu, giám sát hệ thống và sao lưu phù hợp.</p>
-        <p>Không có phương thức truyền tải hoặc lưu trữ điện tử nào bảo đảm an toàn tuyệt đối. Người dùng cần giữ bí mật thông tin đăng nhập, đăng xuất khi dùng thiết bị chung và thông báo cho bộ phận hỗ trợ nếu nghi ngờ tài khoản bị truy cập trái phép.</p>
+        <h2>8. Lưu trữ và bảo mật</h2>
+        <p>Dữ liệu nhân sự, lịch ca và chấm công được lưu trữ trên hệ thống máy chủ do AGS quản lý. Toàn bộ dữ liệu truyền giữa ứng dụng và máy chủ được mã hóa qua giao thức HTTPS. AGS áp dụng các biện pháp kiểm soát quyền truy cập, xác thực tài khoản, giám sát hệ thống và sao lưu dữ liệu.</p>
+        <p>Trên thiết bị, ứng dụng chỉ lưu tạm dữ liệu cần thiết để hiển thị và lưu thông tin đăng nhập trong vùng lưu trữ an toàn của hệ điều hành. Khi bạn đăng xuất, các dữ liệu này sẽ bị xóa khỏi ứng dụng.</p>
+        <p>Không có phương thức truyền tải hoặc lưu trữ điện tử nào an toàn tuyệt đối. Bạn cần giữ bí mật mật khẩu, không chia sẻ tài khoản và báo ngay cho bộ phận hỗ trợ nếu nghi ngờ tài khoản bị truy cập trái phép.</p>
       </section>
 
       <section id="retention">
-        <h2>6. Thời hạn lưu trữ dữ liệu</h2>
-        <p>Dữ liệu được lưu trong thời gian cần thiết cho các mục đích nêu trong chính sách, theo quy định nội bộ và thời hạn lưu trữ bắt buộc của pháp luật. Khi dữ liệu không còn cần thiết, tổ chức sẽ xem xét xóa, ẩn danh hoặc xử lý theo quy trình lưu trữ và tiêu hủy được áp dụng, trừ trường hợp cần giữ lại theo quy định pháp luật hoặc để giải quyết tranh chấp.</p>
-        <p>Thời hạn cụ thể phụ thuộc vào từng loại hồ sơ nhân sự, chấm công và yêu cầu pháp lý liên quan.</p>
+        <h2>9. Thời hạn lưu trữ</h2>
+        <p>Dữ liệu được lưu trong thời gian bạn làm việc tại AGS và trong thời hạn mà quy định nội bộ hoặc pháp luật về lao động, kế toán yêu cầu đối với hồ sơ nhân sự và chấm công. Khi bạn nghỉ việc, tài khoản AHRM sẽ bị vô hiệu hóa. Dữ liệu không còn cần thiết sẽ được xóa hoặc ẩn danh theo quy trình của AGS.</p>
       </section>
 
       <section id="rights">
-        <h2>7. Quyền của người dùng</h2>
-        <p>Tùy theo pháp luật áp dụng và vai trò của người dùng, bạn có thể yêu cầu xem, cập nhật hoặc đính chính thông tin cá nhân; hỏi về việc xử lý dữ liệu; rút lại sự đồng ý khi việc xử lý dựa trên sự đồng ý; hoặc yêu cầu thực hiện các quyền khác theo quy định hiện hành.</p>
-        <p>Để bảo vệ dữ liệu nhân sự và ngăn truy cập trái phép, tổ chức có thể cần xác minh danh tính và thẩm quyền trước khi xử lý yêu cầu. Một số dữ liệu có thể phải được lưu giữ theo nghĩa vụ pháp lý hoặc quy trình nhân sự hợp lệ.</p>
+        <h2>10. Quyền của người dùng</h2>
+        <p>Theo pháp luật Việt Nam về bảo vệ dữ liệu cá nhân, bạn có quyền được biết về việc xử lý dữ liệu của mình; xem, yêu cầu đính chính thông tin không chính xác; rút lại sự đồng ý đối với các tính năng tùy chọn; và thực hiện các quyền khác theo quy định.</p>
+        <p>Để bảo vệ dữ liệu, AGS có thể cần xác minh danh tính của bạn trước khi xử lý yêu cầu.</p>
         <h3>Yêu cầu xóa tài khoản hoặc dữ liệu</h3>
-        <p>Nếu muốn yêu cầu xóa tài khoản hoặc dữ liệu liên quan, vui lòng liên hệ bộ phận hỗ trợ theo thông tin ở mục Liên hệ. Yêu cầu sẽ được xem xét theo quy định pháp luật, nghĩa vụ lưu trữ hồ sơ và chính sách nội bộ. Nếu ứng dụng có chức năng xóa tài khoản trực tiếp, hãy bổ sung hướng dẫn cụ thể tại đây.</p>
+        <p>Vì tài khoản AHRM do AGS cấp, bạn có thể gửi yêu cầu xóa tài khoản hoặc dữ liệu cá nhân qua email ở mục Liên hệ. Yêu cầu sẽ được phản hồi trong thời hạn hợp lý. Một số dữ liệu như hồ sơ chấm công có thể phải được giữ lại theo nghĩa vụ pháp lý; trong trường hợp đó, chúng tôi sẽ thông báo rõ cho bạn.</p>
       </section>
 
       <section id="children">
-        <h2>8. Quyền riêng tư của trẻ em</h2>
-        <p>AHRM được thiết kế cho mục đích quản lý nhân sự và chấm công của tổ chức, không hướng đến trẻ em. Nếu phát hiện dữ liệu của trẻ em được cung cấp không phù hợp với mục đích ứng dụng hoặc quy định áp dụng, tổ chức sẽ xem xét và xử lý theo yêu cầu pháp luật.</p>
+        <h2>11. Quyền riêng tư của trẻ em</h2>
+        <p>AHRM chỉ dành cho nhân viên AGS và không hướng đến trẻ em. Ứng dụng không cố ý thu thập dữ liệu của người dưới 18 tuổi.</p>
       </section>
 
       <section id="changes">
-        <h2>9. Thay đổi chính sách</h2>
-        <p>Chính sách có thể được cập nhật khi chức năng ứng dụng, quy trình xử lý dữ liệu hoặc quy định pháp luật thay đổi. Phiên bản mới sẽ được đăng tại trang này cùng ngày cập nhật. Nếu thay đổi có ảnh hưởng đáng kể đến quyền riêng tư, tổ chức sẽ thông báo bằng phương thức phù hợp khi cần thiết.</p>
+        <h2>12. Thay đổi chính sách</h2>
+        <p>Chính sách có thể được cập nhật khi tính năng của ứng dụng, quy trình xử lý dữ liệu hoặc quy định pháp luật thay đổi. Phiên bản mới sẽ được đăng tại trang này kèm ngày cập nhật. Nếu có thay đổi đáng kể, AGS sẽ thông báo cho nhân viên qua ứng dụng hoặc kênh nội bộ.</p>
       </section>
 
       <section id="contact">
-        <h2>10. Thông tin liên hệ</h2>
-        <p>Nếu có câu hỏi hoặc yêu cầu liên quan đến quyền riêng tư và dữ liệu cá nhân, vui lòng liên hệ đơn vị quản lý ứng dụng AHRM qua thông tin chính thức dưới đây.</p>
+        <h2>13. Thông tin liên hệ</h2>
+        <p>Nếu có câu hỏi hoặc yêu cầu liên quan đến quyền riêng tư và dữ liệu cá nhân, vui lòng liên hệ:</p>
         <div class="contact">
-          <p><strong>Đơn vị:</strong> AGS</p>
-          <p><strong>Email hỗ trợ:</strong> <em>it.ags@ags.com.vn</em></p>
-          <p><strong>Địa chỉ:</strong> <em>Sân Bay Quốc Tế Cam Ranh, Phường Bắc Cam Ranh, Tỉnh Khánh Hòa, Việt Nam</em></p>
+          <p><strong>Đơn vị:</strong> AGS – Aviation Ground Services Co., Ltd</p>
+          <p><strong>Email hỗ trợ:</strong> <a href="mailto:it.ags@ags.com.vn">it.ags@ags.com.vn</a></p>
+          <p><strong>Địa chỉ:</strong> Sân bay Quốc tế Cam Ranh, Phường Bắc Cam Ranh, Tỉnh Khánh Hòa, Việt Nam</p>
         </div>
       </section>
     </article>
   </main>
 
   <footer>
-    <p>© <span id="year">2026</span> AGS · AHRM. Nội dung dành cho mục đích thông tin về quyền riêng tư.</p>
+    <p>© 2026 AGS · AHRM</p>
     <a class="back-top" href="#top">↑ Về đầu trang</a>
   </footer>
 </body>
